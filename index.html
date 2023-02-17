@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cucumber Sandwich</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="/" class="navbarLinks">Home</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="/random.html" class="navbarLinks">Random</a>
+                </li>
+                <li>
+                    <button id="navbarButton" onclick='toggle()'>Click to change color</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <h1 id="title">Random Website</h1>
+    </div>
+
+    <div>
+        <h2 id="burnleyText">Burnley Text</h2>
+        <p id="text">Burnley Football Club is an English association football club based in Burnley, Lancashire, that competes in the EFL Championship, the second tier of English football, following relegation from the 2021–22 Premier League. Founded on 18 May 1882, it was one of the first to become professional (in 1883), and subsequently put pressure on the Football Association to permit payments to players. The club entered the FA Cup for the first time in 1885–86 and was one of the 12 founder members of the Football League in 1888–89. From the 1950s until the 1970s, under chairman Bob Lord, the club became renowned for its youth policy and scouting system, and was one of the first to set up a purpose-built training ground.</p>
+    </div>
+
+    <div>
+        <h2>Starting Line Up:</h2>
+        <h3 id="players"></h3>
+        <h2>Current points:</h2>
+        <h3 id="points"></h3>
+    </div>
+    <!-- <div id="my-content"></div> -->
+
+
+
+    <script>
+        let toggled = false;
+        const toggle = () => {
+            toggled = !toggled;
+            const color = (toggled) ? 'darkred' : 'cornflowerblue';
+            const header = document.getElementById('navbarButton');
+            header.style.backgroundColor = color;
+        };
+
+        const players = () => {
+            return['Muric', 'Roberts', 'Ekdal', 'Beyer', 'Maatsen', 'Cullen', 'Brownhill', 'Tella', 'Gudmundsson', 'Zaroury', 'Barnes']
+        };
+
+        let showPlayers = players();
+        let html = '';
+
+        for(let i = 0; i < showPlayers.length; i++) {
+            html += '<li>' + showPlayers[i] + '</li>'
+        }
+
+        document.getElementById('players').innerHTML = '<ul>' + html + '</ul>'
+
+        let points = 69;
+
+        document.getElementById('points').innerHTML = '<b>' + points + '<b>'
+
+
+        class Welcome {
+            constructor(name) {
+                this.name = name;
+            }
+
+            welcome() {
+                console.log(`Welcome to the site, ${this.name}`);
+            };
+        }
+
+        
+        const welcomeMessage = new Welcome('Nathan');
+        welcomeMessage.welcome()
+    </script>
+</body>
+</html>

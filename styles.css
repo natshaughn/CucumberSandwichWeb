@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navBarItem {
+    height: 80px;
+}
+
+.navbarLinks {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 50px;
+    height: 100%;
+}
+
+#navbarButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    width: 200px
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: orange;
+    color: black
+}
+
+button:hover {
+    background-color: yellow;
+    transition: all 0.3 ease;
+}
+
+.navbarLinks:hover {
+    color: red;
+    transition: all 0.3 ease;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#title {
+    color: cornflowerblue;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#burnleyText {
+    color: blue;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding: 20px;
+}
+
+#text {
+    color: darkred;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    padding-top: 30px;
+    padding: 20px;
+    font-size: 50px;
+}
+
+#players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkslateblue;
+}
+
+#points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: mediumvioletred;
+}
