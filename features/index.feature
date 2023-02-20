@@ -1,11 +1,8 @@
-Feature: Title
+Feature: Testing website
 
     Scenario: I should see the correct title
         Given the webpage has loaded
         Then the heading text should read Random website
-
-
-Feature: Changing color of the button 
 
     Scenario: The button should change color when clicked
         When the button is clicked
